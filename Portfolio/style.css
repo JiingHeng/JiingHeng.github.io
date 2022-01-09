@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Mochiy+Pop+One&display=swap');
+
+:root {
+    --color-textHotpink: hotpink;
+    --color-backgroundCyan: cyan;
+    --color-backgroundYellow: hsl(60 100% 50% / 0.3);
+    --color-backgroundWhite: white;
+}
+
+.carouselContainer {
+    background-color: var(--color-backgroundCyan);
+}
+
+.left {
+    background-color: var(--color-textHotpink);
+}
+
+.right {
+    background-color: var(--color-backgroundYellow);
+}
+
+body {
+    /* background-color: var(--color-backgroundCyan); */
+    /* background-color: cyan; */
+    overflow-x: hidden;
+}
+
+/* *, *::before, *::after {
+    box-sizing: border-box;
+}  */
+
+.logo {
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.navbar a {
+    color: var(--color-textHotpink);
+    /* color:hotpink; */
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+nav a.active {
+    text-decoration: underline;
+    color: var(--color-textHotpink);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--color-textHotpink);
+}
+
+.navbar {
+    background-color: var(--color-backgroundYellow);
+    /* background-color: hsl(60 100% 50% / 0.3); */
+    font-family: 'Lobster', cursive;
+    width:100%;
+}
+
+.navbar2 {
+    background-color: var(--color-backgroundYellow);
+    font-family: 'Lobster', cursive;
+}
+
+ul {
+    list-style: none;
+    float: right;
+    /* text-align: right; */ /*doesnt work*/
+}
+
+li {
+    display: inline;
+    padding: 10px;
+    /* background-position: 100% .4em;
+    padding-right: .6rem; */ /*doesnt work*/
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding:10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    box-shadow: 0 0 0.125rem 0 var(--color-backgroundYellow);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.left {
+    float: left;
+    padding: 20px;
+}
+
+.right {
+    float: right;
+    padding: 20px;
+}
+
+/* .jhimg {
+    object-fit: cover;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+} */
+
+.imgofmyself {
+    width: 50%;
+    height: 50%;
+}
+
+.btnMore {
+    font-family: 'Lobster', cursive;
+    font-size: 0.75rem;
+    display: inline-block;
+    cursor: pointer;
+    color: var(--color-textHotpink);
+    border: currentColor 0.125rem solid;
+    padding: 0.25rem 1em;
+    border-radius: 0.25rem;
+    text-shadow: 0 0 0.125em hsl(60 0% 100% / 0.3),
+    0 0 0.45em currentColor;
+    box-shadow: inset 0 0 0.5rem 0 var(--color-textHotpink),
+    0 0 0.5em 0 var(--color-textHotpink);
+    position: relative;
+}
+
+
+.carousel-item {
+    size: 1rem;
+}
+
+.carousel, .carousel-item {
+    width:640px; 
+    height:360px;
+    justify-content: center;
+    align-items: center;
+}
+
+.jhPoster {
+    object-fit: cover;
+}
+
+.bannerContainer{
+    padding: 20px;
+}
+
+footer {
+    padding: 20px;
+}
+
+.footerContainer {
+    text-align: center;
+}
+
+.fa-instagram, .fa-linkedin, .fa-envelope {
+    padding: 10px;
+    font-size: 125%;
+}
+
+.footerContainer a {
+    color: black;
+}
+
+.copyrightContainer {
+    justify-content: center;
+    text-align: center;
+}
+
+/* .cardContainer {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+} */ /* doesnt work*/
